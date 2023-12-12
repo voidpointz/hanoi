@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>resource/wallhaven-ey2rmk.jpg</file>
+    <file>resource/about.png</file>
+    <file>resource/about.png</file>
+    <file>C:/Users/双木/Pictures/Saved Pictures/wallhaven-132m93.jpg</file>
+    <file>resource/exit.png</file>
+    <file>resource/reast.png</file>
+    <file>resource/run.png</file>
+    <file>resource/step.png</file>
+    <file>resource/stop.png</file>
+    <file>resource/background.png</file>
+    <file>resource/blue.png</file>
+    <file>resource/gray.png</file>
+    <file>resource/green.png</file>
+    <file>resource/orange.png</file>
+    <file>resource/yellow.png</file>
+  </qresource>
+</RCC>
