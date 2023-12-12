@@ -52,6 +52,7 @@ class hanoifly(QThread):
             self.flyPlate(self.columnC,self.columnB,21+330*2,21+330)
 
     def flyPlate(self,columnStart,columnEnd,wideStart,wideEnd):
+        speed = 0.001
         tempPlate = columnStart.pop()
         columnEnd.append(tempPlate)
         highend = len(columnEnd)
@@ -59,16 +60,17 @@ class hanoifly(QThread):
         highStart = 431 - len(columnStart)*54
         x,y,z = highStart,wideStart,100
         while x > 100:
-            x -= 0.0003
+            x -= speed
             tempPlate.move(wideStart,x)
         if y < wideEnd:
             while y < wideEnd:
-                y += 0.0003
+                y += speed
                 tempPlate.move(y,100)
         else:
             while y > wideEnd:
-                y -= 0.0003
+                y -= speed
                 tempPlate.move(y,100)
         while z < highend:
-            z += 0.0003
+            z += speed
             tempPlate.move(wideEnd,z)
+        print(columnStart,columnEnd,wideStart,wideEnd)
